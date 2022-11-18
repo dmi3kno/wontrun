@@ -18,8 +18,7 @@ wr_hex <- image_canvas_hex(fill_color = bg_col, border_color = br_col, border_si
   image_annotate("wontrun", gravity = "center", location = "+0+400",
                  size=230, font="Aller", color = bk_col, weight = 400) %>%
   image_composite(image_canvas_hexborder(border_color = br2_col, border_size = 13), gravity = "center")   %>%
-  image_composite(image_canvas_hexborder(border_color = br_col, border_size = 8), gravity = "center")   %>%
-  image_scale("50%")
+  image_composite(image_canvas_hexborder(border_color = br_col, border_size = 8), gravity = "center")
 
 wr_hex %>%
   image_scale("1200x1200") %>%
